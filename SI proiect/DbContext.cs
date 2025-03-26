@@ -1,8 +1,10 @@
 ﻿using System.Data.Entity;
+using MySql.Data.MySqlClient; // Necesită referința la MySql.Data.Entity.EF6
 
 public class ApplicationDbContext : DbContext
 {
-    public ApplicationDbContext() : base("name=ApplicationDbContext")
+    public ApplicationDbContext()
+        : base("name=ApplicationDbContext")
     {
     }
 
